@@ -1,0 +1,73 @@
+.box {
+  height: 400px;
+  width: 400px;
+  border: 1px solid #000;
+}
+
+.linear-gradient {
+  background: linear-gradient(135deg, yellow, blue);
+}
+
+.repeating-linear-gradient {
+  background: repeating-linear-gradient(0deg, yellow 0px, blue 40px, black 200px);
+}
+
+.scale {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  background: repeating-radial-gradient(yellow 0px, red 90px);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-bottom: 200px;
+}
+
+.scale-on-hover {
+  position: relative;
+  background: green;
+}
+
+.scale-on-hover:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.scale-on-hover h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.skewy {
+  background-color: red;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+}
+
+.skewx {
+  background-color: yellow;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+
+.box-shadow-container {
+  position: relative;
+  background: linear-gradient(315deg, blue, yellow);
+}
+
+.box-shadow-container .box-shadow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: moccasin;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-box-shadow: 10px 10px 10px 10px #000;
+          box-shadow: 10px 10px 10px 10px #000;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
