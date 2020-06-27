@@ -1,7 +1,17 @@
+@import "keyframes";
 .box {
     height: 400px;
     width: 400px;
     border: 1px solid #000;
+}
+
+.small-box {
+    position: relative;
+    height: 100px;
+    width: 400px;
+    border: 1px solid black;
+    animation-duration: 3s;
+
 }
 .linear-gradient {
     background: linear-gradient(135deg,yellow, blue);
@@ -58,4 +68,44 @@
         box-shadow: 10px 10px 10px 10px #000;
         border-radius: 50%;
     }
+}
+
+.animation {
+    animation: colors-transition ;
+    // animation-duration:  6s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.linear {
+    animation-name: move-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ease-in {
+    animation-name: move-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.ease-out {
+    animation-name: move-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+    animation-name: move-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.step-end {
+    animation-name: move-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
 }

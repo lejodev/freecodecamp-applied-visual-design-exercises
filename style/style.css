@@ -1,7 +1,82 @@
+@-webkit-keyframes colors-transition {
+  0% {
+    background-color: #ff0000;
+  }
+  20% {
+    background-color: #0077ff;
+  }
+  40% {
+    background-color: #ffff00;
+  }
+  60% {
+    background-color: #7700ff;
+  }
+  80% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #ff0077;
+  }
+}
+
+@keyframes colors-transition {
+  0% {
+    background-color: #ff0000;
+  }
+  20% {
+    background-color: #0077ff;
+  }
+  40% {
+    background-color: #ffff00;
+  }
+  60% {
+    background-color: #7700ff;
+  }
+  80% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #ff0077;
+  }
+}
+
+@-webkit-keyframes move-to-right {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 400px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes move-to-right {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 400px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 .box {
   height: 400px;
   width: 400px;
   border: 1px solid #000;
+}
+
+.small-box {
+  position: relative;
+  height: 100px;
+  width: 400px;
+  border: 1px solid black;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .linear-gradient {
@@ -69,5 +144,64 @@
   -webkit-box-shadow: 10px 10px 10px 10px #000;
           box-shadow: 10px 10px 10px 10px #000;
   border-radius: 50%;
+}
+
+.animation {
+  -webkit-animation: colors-transition;
+          animation: colors-transition;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.linear {
+  -webkit-animation-name: move-to-right;
+          animation-name: move-to-right;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.ease-in {
+  -webkit-animation-name: move-to-right;
+          animation-name: move-to-right;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.ease-out {
+  -webkit-animation-name: move-to-right;
+          animation-name: move-to-right;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  -webkit-animation-name: move-to-right;
+          animation-name: move-to-right;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.step-end {
+  -webkit-animation-name: move-to-right;
+          animation-name: move-to-right;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
 }
 /*# sourceMappingURL=style.css.map */
