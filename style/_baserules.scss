@@ -11,7 +11,7 @@
     width: 400px;
     border: 1px solid black;
     animation-duration: 3s;
-
+    background: repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px,  black 80px);
 }
 .linear-gradient {
     background: linear-gradient(135deg,yellow, blue);
@@ -43,7 +43,7 @@
 }
 
 .skewy {
-    background-color: red;
+    background: repeating-linear-gradient(45deg, yellow 0px, blue 50px, black 50px,  teal 100px);
     transform: skewX(20deg);
 }
 
@@ -108,4 +108,10 @@
     animation-name: move-to-right;
     animation-iteration-count: infinite;
     animation-timing-function: step-end;
+}
+
+.cubic1 {
+    animation-name: move-to-right;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,.11,.47,1.6);
 }

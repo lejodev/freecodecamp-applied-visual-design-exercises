@@ -77,6 +77,7 @@
   border: 1px solid black;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  background: repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px, black 80px);
 }
 
 .linear-gradient {
@@ -115,7 +116,7 @@
 }
 
 .skewy {
-  background-color: red;
+  background: repeating-linear-gradient(45deg, yellow 0px, blue 50px, black 50px, teal 100px);
   -webkit-transform: skewX(20deg);
           transform: skewX(20deg);
 }
@@ -203,5 +204,14 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: step-end;
           animation-timing-function: step-end;
+}
+
+.cubic1 {
+  -webkit-animation-name: move-to-right;
+          animation-name: move-to-right;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1, 0.11, 0.47, 1.6);
+          animation-timing-function: cubic-bezier(1, 0.11, 0.47, 1.6);
 }
 /*# sourceMappingURL=style.css.map */
